@@ -23,7 +23,7 @@ describe('Recipes', function() {
         res.should.have.status(200);
         res.should.be.json;
         //this is still returning an array of objects, so it should be an array still.
-        res.should.should.be.a.('array');
+        res.body.should.should.be.a.('array');
         res.body.legnth.should.be.at.least(1);
         const expectedKeys = ['name', 'ingredients'];
         res.body.forEach(function(item) {
