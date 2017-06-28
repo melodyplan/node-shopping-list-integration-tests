@@ -63,7 +63,7 @@ describe('Recipes', function() {
           .send(UpdateRecipe);
       })
       .then(function(res) {
-        res.should.have.status.(200);
+        res.should.have.status(200);
         res.should.be.json;
         res.body.should.be.a('object');
         res.body.should.deep.equal(updateRecipe)
