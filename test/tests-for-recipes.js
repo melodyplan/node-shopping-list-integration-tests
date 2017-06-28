@@ -12,7 +12,7 @@ describe('Recipes', function() {
     return runServer();
   });
 
-  after function(){
+  after(function() {
     return closeServer();
   });
 
