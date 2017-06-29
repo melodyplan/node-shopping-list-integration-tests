@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: FUaYB93af/eLGggR2vPxbpKxlXdEbkP23aYBhfJ9KVEe5hpAWx/54+vZuPK4Wmi/m9ngl7tdPQ4BPd9gq7IKglXbQlmPISBIuWq68YHjC8BAJvswbJOmDtlRJgUeuNRnQPTGAQv73ktdCeN4F+33mmgLNNw/5b/JwR+z1wpzDHCkoCv/iLpXfTazJ7Mli6vbYfMAE+7Ph3wYi0cWFoVYeOB8rSCpg37sHMz/9+XjYNkkXX6nAZNfdHqDScm2CKWByI2LpBifzOTS/9hc69QLCIT+SF965CwQlW4VhrngZlS4yCdUMlodDEsbFf9z3IRSoKKYCf3q1Uzeb3KpVlbCNrvFb1c+evnqv9HQGnQfBgp1uuelNeOAL1OO7O7R2ympppF7IEmHofja8ig25gRj3X8gGTG8u21CmVfil0RekxbLkgln1+mBWbRcwNtNxt5GVAsvHOkjqgkHxNxGY3izM+T2SyFG3Eg2gDH7jobsDFuD6S2CUNRMI/CFJPx2aZi+pqSzj0cNOZnvnIFRvP84o2gQ9RWkHYJQseVLQEN76uxsrApvP2wO8ZozW+6ICoW5LUqU6L/WNMTB3bsLJtgd4rnqrWKc8H+emRKqwyGUClEUrr+p8QQooG5iOkJ9uzHYgX4uweMHVYVFJ5fWlouunHUMNXeOyvU1jbhdMH9Hr30=
+  app: sleepy-everglades-73245
+  on:
+    repo: melodyplan/node-shopping-list-integration-tests
