@@ -60,7 +60,7 @@ describe('Recipes', function() {
         updateRecipe.id = res.body[0].id;
         return chai.request(app)
           .put(`/recipes/${updateRecipe.id}`)
-          .send(UpdateRecipe);
+          .send(updateRecipe);
       })
       .then(function(res) {
         res.should.have.status(200);
